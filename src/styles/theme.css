@@ -1,0 +1,611 @@
+/* ==============================
+   MongoDB Compass Inspired Theme
+============================== */
+
+:root {
+  --primary: #00684a;
+  --accent: #00ed64;
+
+  --dark: #001e2b;
+
+  --background: #f7faf9;
+
+  --card: #ffffff;
+
+  --border: #d6e4e5;
+
+  --text: #21313c;
+
+  --secondary: #6b7280;
+
+  --shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  --radius: 18px;
+}
+
+/* ---------- BODY ---------- */
+
+body {
+  background: #f6f9f8;
+
+  background-image:
+    radial-gradient(circle at top right, #00ed6412, transparent 25%),
+    radial-gradient(circle at bottom left, #00684a10, transparent 20%);
+
+  font-family: "Inter", sans-serif;
+
+  color: #21313c;
+}
+
+/* ---------- BUTTON ---------- */
+
+.primary-btn {
+  background: var(--primary);
+
+  color: white;
+
+  border: none;
+
+  border-radius: 12px;
+
+  padding: 12px 25px;
+
+  transition: 0.3s;
+
+  font-weight: 600;
+}
+
+.primary-btn:hover {
+  background: var(--accent);
+
+  color: var(--dark);
+
+  transform: translateY(-3px);
+}
+
+/* ---------- CARD ---------- */
+
+.app-card {
+  background: white;
+
+  border-radius: 20px;
+
+  border: 1px solid #e3ecea;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+
+  transition: 0.35s;
+}
+
+.app-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+
+  border-color: #00ed64;
+}
+/* ---------- TITLE ---------- */
+
+.section-title {
+  color: var(--dark);
+
+  font-weight: 700;
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+  background: linear-gradient(135deg, #001e2b, #004d3a, #00684a);
+
+  color: white;
+
+  padding: 100px 0;
+}
+
+/* ================= NAVBAR ================= */
+
+.nav-item-custom {
+  text-decoration: none;
+
+  color: #d1d5db;
+
+  font-weight: 500;
+
+  transition: 0.3s;
+
+  font-size: 16px;
+
+  padding: 8px 12px;
+
+  border-radius: 8px;
+}
+
+.nav-item-custom:hover {
+  background: #19313c;
+
+  color: #00ed64;
+}
+
+.nav-item-custom.active {
+  color: #00ed64;
+}
+
+.nav-item-custom {
+  text-decoration: none;
+  color: #d1d5db;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.nav-item-custom:hover {
+  color: #00ed64;
+  background: #19313c;
+}
+
+.nav-item-custom.active {
+  color: #00ed64;
+  background: #19313c;
+}
+.primary-btn {
+  width: 100%;
+  background: #00684a;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background: #00ed64;
+  color: #001e2b;
+}
+/* ===========================
+   INPUTS
+=========================== */
+
+.form-control {
+  border-radius: 12px !important;
+  border: 1px solid #d6e4e5 !important;
+  padding: 12px !important;
+  box-shadow: none !important;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #00ed64 !important;
+  box-shadow: 0 0 0 4px rgba(0, 237, 100, 0.15) !important;
+}
+
+/* ===========================
+   PRIMARY BUTTON
+=========================== */
+
+.primary-btn {
+  background: #00684a;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 22px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background: #00ed64;
+  color: #001e2b;
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   DANGER BUTTON
+=========================== */
+
+.danger-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 22px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.danger-btn:hover {
+  background: #bb2d3b;
+}
+
+/* ===========================
+   WARNING BUTTON
+=========================== */
+
+.warning-btn {
+  background: #ffc107;
+  color: #001e2b;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 22px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.warning-btn:hover {
+  background: #ffca2c;
+}
+
+/* ===========================
+   OUTLINE BUTTON
+=========================== */
+
+.outline-btn {
+  background: transparent;
+  color: #00684a;
+  border: 2px solid #00684a;
+  border-radius: 12px;
+  padding: 12px 22px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.outline-btn:hover {
+  background: #00684a;
+  color: white;
+}
+
+.app-card {
+  cursor: pointer;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+}
+
+/* ================= HERO ================= */
+
+.logo-circle {
+  width: 110px;
+
+  height: 110px;
+
+  margin: auto;
+
+  border-radius: 30px;
+
+  background: linear-gradient(135deg, #00ed64, #00684a);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 38px;
+
+  font-weight: 800;
+
+  color: #001e2b;
+
+  box-shadow: 0 20px 50px rgba(0, 237, 100, 0.3);
+}
+
+.feature-icon {
+  font-size: 55px;
+}
+
+/* =========================
+   VITASYNC DASHBOARD
+========================= */
+
+.dashboard-page {
+  min-height: calc(100vh - 70px);
+  padding-bottom: 60px;
+}
+
+.dashboard-label {
+  color: #00684a;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.dashboard-title {
+  color: #001e2b;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.dashboard-subtitle {
+  color: #6b7280;
+  margin: 0;
+}
+
+.stat-card {
+  background: #ffffff;
+  border: 1px solid #e3ecea;
+  border-radius: 18px;
+  padding: 24px;
+  min-height: 190px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  border-color: #00ed64;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.09);
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.green-icon {
+  background: #e6f7ef;
+}
+
+.blue-icon {
+  background: #e8f4ff;
+}
+
+.orange-icon {
+  background: #fff1e6;
+}
+
+.purple-icon {
+  background: #f2ecff;
+}
+
+.stat-label {
+  color: #6b7280;
+  margin: 0;
+  font-size: 14px;
+}
+
+.stat-value {
+  color: #001e2b;
+  font-weight: 800;
+  margin: 5px 0;
+}
+
+.stat-description {
+  color: #6b7280;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* Dashboard Cards */
+
+.dashboard-card {
+  background: #ffffff;
+  border: 1px solid #e3ecea;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-card h3 {
+  color: #001e2b;
+  font-weight: 700;
+}
+
+/* Progress */
+
+.progress-percentage {
+  background: #e6f7ef;
+  color: #00684a;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+.progress-item {
+  margin-bottom: 25px;
+  color: #34454f;
+  font-size: 14px;
+}
+
+.progress-track {
+  width: 100%;
+  height: 9px;
+  background: #e8efed;
+  border-radius: 20px;
+  margin-top: 9px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00684a, #00ed64);
+  border-radius: 20px;
+}
+
+/* Quick Actions */
+
+.quick-action {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: #21313c;
+  padding: 14px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  transition: 0.25s ease;
+}
+
+.quick-action:hover {
+  background: #f0f8f5;
+  color: #00684a;
+  transform: translateX(4px);
+}
+
+.quick-action > span {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f8f5;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.quick-action strong {
+  display: block;
+  font-size: 14px;
+}
+
+.quick-action small {
+  display: block;
+  color: #7a8991;
+  margin-top: 2px;
+}
+
+/* =========================
+   WATER CONTROLS
+========================= */
+
+.water-controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.water-btn {
+  background: #00684a;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.water-btn:hover {
+  background: #00ed64;
+  color: #001e2b;
+  transform: translateY(-2px);
+}
+
+.water-reset {
+  background: transparent;
+  color: #6b7280;
+  border: 1px solid #d6e4e5;
+  border-radius: 9px;
+  padding: 7px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.water-reset:hover {
+  background: #f1f5f4;
+  color: #001e2b;
+}
+
+/* =========================
+   NET CALORIES
+========================= */
+
+.net-calorie-box {
+  background: #f0f8f5;
+  border: 1px solid #d8ede5;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.net-calorie-box small {
+  color: #00684a;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.net-calorie-box h3 {
+  margin: 5px 0 0;
+  color: #001e2b;
+  font-weight: 800;
+}
+
+.net-calorie-details {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #66757d;
+  font-size: 13px;
+}
+
+/* =========================
+   RECENT ACTIVITY
+========================= */
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 5px;
+  border-bottom: 1px solid #e8efed;
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  background: #f0f8f5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+}
+
+.activity-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-content strong {
+  color: #21313c;
+  font-size: 14px;
+}
+
+.activity-content small {
+  color: #7a8991;
+  margin-top: 3px;
+}
+
+.empty-activity {
+  text-align: center;
+  padding: 30px;
+  color: #7a8991;
+}
+
+.activity-list {
+  width: 100%;
+  max-height: none;
+  overflow: visible;
+  padding-right: 0;
+}
